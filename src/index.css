@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+.app {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.question-area {
+  max-width: 1000px;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.question-box {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px; 
+}
+
+.question-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.question-button {
+  display: flex;
+  flex-direction: column;
+}
+
+
+button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: brown;
+  color: white;
+}
+
+button:disabled{
+  background-color: darkgray;
+  color: darkolivegreen;
+}
+
+select {
+  margin:5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: coral;
+  color: white;
 }
