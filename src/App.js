@@ -57,7 +57,7 @@ console.log(words && words.quizzlist);
     <div className="app">
       {!chosenLevel && <div className="level-selector">
         <h1>Words Quizz Game</h1>
-        <p>Select Your Level To Start</p>
+        <p className="description">Select Your Level To Start</p>
         <select 
         name="levels" 
         id="levels" 
@@ -99,8 +99,8 @@ console.log(words && words.quizzlist);
 
       {chosenLevel && words && <div className="question-area">
         <h1>Welcome to Level: {chosenLevel}</h1>
-        <h3> Your score is : {score}</h3>
-        <p>Just select which word is most closely related to the given group of words.</p>
+        <h3> Your Score: {score}</h3>
+        <p className="description">Just select which word is most closely related to the given group of words.</p>
 
         <div className="questions">
           {words.quizlist.map ((question, _questionIndex) =>(
