@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .app {
   font-family: 'Roboto Mono', monospace;
@@ -16,13 +21,14 @@
 .questions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 5px;
 
 }
 .question-box {
   background-color: blanchedalmond;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 20px;
   margin: 10px; 
 }
 
@@ -54,6 +60,15 @@ button:disabled{
 select {
   margin:5px;
   padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: coral;
+  color: white;
+}
+
+.back-button {
+  margin: 5px;
+  padding: 12px;
   border-radius: 5px;
   border: none;
   background-color: coral;

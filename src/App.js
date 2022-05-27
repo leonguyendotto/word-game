@@ -100,6 +100,7 @@ console.log(words && words.quizzlist);
       {chosenLevel && words && <div className="question-area">
         <h1>Welcome to Level: {chosenLevel}</h1>
         <h3> Your score is : {score}</h3>
+        <p>Just select which word is most closely related to the given group of words.</p>
 
         <div className="questions">
           {words.quizlist.map ((question, _questionIndex) =>(
@@ -127,7 +128,7 @@ console.log(words && words.quizzlist);
             </div>
           ))}
         </div>
-        <button onClick={()=> setChosenLevel(null)}>
+        <button className="back-button" onClick={()=> setChosenLevel(null)}>
           Go Back
         </button>
       </div>}
