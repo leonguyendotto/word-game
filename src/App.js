@@ -17,10 +17,13 @@ const App =() => {
       method: 'GET',
       url: 'https://twinword-word-association-quiz.p.rapidapi.com/type1/',
       params: {level: chosenLevel, area: 'sat'},
+      headers: {
+        'X-RapidAPI-Host': 'twinword-word-association-quiz.p.rapidapi.com',
+        'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY 
+      }
     }
 
     axios.request(options).then((response) => {
-      console.log(response.data)
       setWords(response.data)
     }).catch((error) => {
       console.error(error);
